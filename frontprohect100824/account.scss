@@ -1,0 +1,238 @@
+.main-page{
+    gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    max-width: 1440px;
+    @media (min-width : 1440px) {
+    
+        
+    }
+    @media (max-width : 375px) {
+        
+    }
+
+
+    &__section{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &__title{
+            display: flex;
+            justify-content: space-between;
+            height: 30px;
+            width: 100%;
+            @media (max-width : 400px) {
+                width: 350px;
+            }
+        }
+
+        &__body{
+            .two-item{
+            display: flex;
+            gap: 20px;
+            .item{
+            height: 120px;
+            width: 255px;
+            background-color: white;
+            border-radius: 25px;
+            display: flex;
+            padding: 25px;
+            gap: 20px;
+            &__icon{
+                height: 70px;
+                width: 70px;
+                border-radius: 50%;
+                background-color: aquamarine;
+                padding: 20px;
+                text-align: center;
+            }
+            &__name-amount{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                h2{
+                    font-size: 1.5625rem;
+                    font-weight: 600;
+                    line-height: 30.26px;
+                    
+
+                }
+                h4{
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 19.36px;
+
+                }
+            }
+
+        }
+    }
+    .transactions{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 730px;
+        height: 235px;
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px;
+        .transaction{
+            text-align: center;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: space-between;
+            &__icon{
+                height: 55px;
+                width: 55px;
+                border-radius: 20px;
+                background-color: cadetblue;
+                padding: 15px;
+                text-align: center;
+            }
+            &__name-date{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 5px;
+                width: 156px;
+
+            }
+            &__data{
+                display: flex;
+                justify-content: space-between;
+                gap: 50px;
+            }
+            &__price{
+                font-family: "Inter", sans-serif;
+                font-size: 1rem;
+                font-weight: 500;
+                line-height: 19.36px;
+                text-align: end;
+                
+            }
+
+        }
+}
+        .my-cards{
+            display: flex;
+            gap: 25px;
+            .card{
+                background-color: white;
+                width: 350px;
+                height: 235px;
+                border-radius: 30px;
+                padding-top: 10px;
+                &__header{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 20px;
+                    padding-right: 25px;
+                    padding-bottom: 0;
+                    &__left{
+                        display:flex;
+                        flex-direction: column;
+                    }
+                }
+                &__mid{
+                    display: flex;
+                    padding: 20px;
+                    padding-bottom: 37px;
+                    gap: 50px;
+                }
+
+                &__footer{
+                    padding: 20px;
+                    display: flex;
+                    justify-content: space-between;
+
+                }
+                
+            }
+            .select-card{
+                background: linear-gradient(107.38deg, #2D60FF 2.61%, #539BFF 101.2%);
+                h2{color: white;}
+                h3{color: white;}
+                h4{color: white;}
+                .card__footer{
+                    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+
+                }
+
+                
+            }
+
+        }
+
+        .debit{
+         height: 364px;
+         width: 730px;
+         background-color: white;
+         border-radius: 25px;
+         padding: 30px;
+         position: relative;
+         &__header{
+            display: flex;
+            justify-content: space-between;
+            &__left{
+                display: flex;
+                gap: 2px;
+                text-align: end;
+            }
+            &__right{
+                display: flex;
+                gap: 10px;
+                .dot{
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .graf{
+            display: flex;
+            gap: 30px;
+            position: absolute;
+            z-index: 1;
+            top: 90px;
+            left: 30px;
+        &__month{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            width: 70px;
+            justify-content: end;
+            &__rows{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                align-items: end;
+                .blue{
+                    background-color: var(--secondery);
+                    width: 30px;
+                    border-radius: 10px;
+                }
+                .green{
+                    background-color: var(--orenge2);
+                    width: 30px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+        }
+    }
+}

@@ -1,0 +1,309 @@
+.main-page{
+    gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    max-width: 1440px;
+    width: auto;
+    @media (min-width : 1440px) {
+    
+        
+    }
+    @media (max-width : 410px) {
+        flex-direction: column;
+    }
+
+
+    &__section{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &__title{
+            display: flex;
+            justify-content: space-between;
+            height: 30px;
+            width: 100%;
+            @media (max-width : 400px) {
+                width: 350px;
+            }
+        }
+
+        &__body{
+            .my-cards{
+                display: flex;
+                gap: 25px;
+                .card{
+                    background-color: white;
+                    width: 350px;
+                    height: 235px;
+                    border-radius: 30px;
+                    padding-top: 10px;
+                    justify-content: space-between;
+                    display: flex;
+                    flex-direction: column;
+                    @media (max-width : 1442px) {
+                        width: 231px;
+                        height: 170px;
+                    }
+                    @media (max-width : 410px) {
+                        width: 265px;
+                    }
+                    &__header{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 20px;
+                        padding-right: 25px;
+                        @media (max-width : 1442px) {
+                            padding: 15px;
+                            padding-bottom: 0;
+
+            
+                        }
+
+                        &__left{
+                            display:flex;
+                            flex-direction: column;
+                        }
+                    }
+                    &__mid{
+                        display: flex;
+                        padding: 20px;
+                        gap: 50px;
+                        @media (max-width : 1442px) {
+                            padding: 10px;
+                            padding-bottom: 5px;
+
+                        }
+                    }
+
+                    &__footer{
+                        padding: 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        @media (max-width : 1442px) {
+                            padding: 15px;
+                            padding-bottom: 5px;
+                        }
+
+                    }
+                    
+                }
+                .select-card{
+                    background: linear-gradient(107.38deg, #4C49ED 2.61%, #0A06F4 101.2%);
+                    h2{color: white;}
+                    h3{color: white;}
+                    h4{color: white;}
+                    .card__footer{
+                        background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+
+                    }
+                    
+                }
+
+            }
+            .My-Expense{
+                background-color: white;
+                width: 350px;
+                height: 235px;
+                border-radius: 30px;
+                display: flex;
+                padding: 30px;
+                gap: 10px;
+                @media (max-width : 1440px) {
+                    width: 325px;
+                    height: 214px;
+                }
+                @media (max-width : 410px) {
+                    width: 325px;
+                    height: 214px;
+                }
+
+                &__rows{
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    justify-content: end;
+                    h6{
+                        font-family: "Inter", sans-serif;
+                        font-size: 0.7rem;
+                        font-weight: 500;
+                        line-height: 16.94px;
+                        text-align: center;
+                        color: rgba(52, 60, 106, 1);
+                    }
+                    &__row{
+                        background-color: var(--background2);
+                        width: 37px;
+                        height: 10px;
+                        border-radius: 10px;
+
+                    }
+                    
+                }
+            }
+            .bar{
+                display: flex;
+                gap: 70px;
+                position: relative;
+                padding: 10px;
+                text-align: center;
+                padding-left: 10px;
+                padding-top: 0;
+                border-bottom: 1px solid rgba(235, 238, 242, 1);
+                padding-bottom: 6px;
+                @media (max-width : 410px) {
+                    width: 325px;
+                    gap: 40px;
+                }
+                .select{
+                    height: 3px;
+                    width: 145px;
+                    position: absolute;
+                    background-color: var(--secondery);
+                    border-radius: 30px 30px 0 0 ;
+                    top: 25px;
+                    left: 0px;
+                    @media (max-width : 410px) {
+                        width: 110px;
+                    
+                    }
+                    // border-bottom: 5px solid var(--secondery);
+                    // border-radius: 5px;
+                }
+            }
+            .Recent-Transactions{
+                background-color: white;
+                width: 1110px;
+                height: 397px;
+                border-radius: 30px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                margin-top: 25px;
+                padding: 30px;
+                gap: 15px;
+                @media (max-width : 410px) {
+                   width: 325px;
+                   height: 299px;
+                    padding: 15px;
+                    padding-top: 5px;
+                    gap: 5px;
+                  
+                 }
+
+                &__title{
+                    display: flex;
+                    gap: 10px;
+                    @media (max-width : 410px) {
+                       display: none;
+                    }
+
+
+                }
+                &__Recent-Transaction{
+                    display: flex;
+                    gap: 10px;
+                    border-top: 1px solid rgba(235, 238, 242, 1) ;
+                    padding-top: 15px;
+                    align-items: center;
+                    .all{
+                        display: flex;
+                        @media (max-width : 410px) {
+                            display: none;
+                         }
+                    }
+                    .name-date{
+                        display: flex;
+                        flex-direction: column;
+                        @media (max-width : 410px) {
+                            width: 150px;
+                            align-items: start  ;
+                         }
+                    .ss{
+                        display: none;
+                        @media (max-width : 410px) {
+                            display: block;
+                         }
+                    }
+                    h6{
+                        text-align: end;
+                    }
+
+                }
+                    &__download{
+                        width: 100px;
+                        height: 35px;
+                        border-radius: 50px;
+                        border: 1px solid rgba(18, 50, 136, 1);
+                        color: rgba(18, 50, 136, 1);
+                        text-align: center;
+                        padding: 5px;
+                        margin-left: 100px   ;
+                        
+                        @media (max-width : 410px) {
+                            display: none;
+                         }
+                        h6{
+                            font-family: "Inter", sans-serif;
+                            font-size: 1rem;
+                            font-weight: 400;
+                            line-height: 19.36px;
+                            color: rgba(18, 50, 136, 1);
+                        
+                        }
+                    }
+
+                }
+
+            }
+            footer{
+                color: white;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                justify-content: end;
+                padding-top: 30px;
+                font-family: "Inter", sans-serif;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 18.15px;
+                @media (max-width : 410px) {    
+                    justify-content: start
+
+                 }
+
+
+                .page{
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 10px;
+                    background-color: var(--secondery);
+                    text-align: center;
+                    padding: 10px;
+                }
+                h5{
+                    color: var(--secondery);
+                    margin-right: 10px;
+                    margin-left: 10px;
+                }
+            }
+            
+
+
+
+
+
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

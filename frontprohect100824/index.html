@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankDash.</title>
+    <link rel="stylesheet" href="./dist/style.css">
+    <link rel="stylesheet" href="./dist/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="continer">
+    <aside>
+
+        <div class="title"> <img src="./icons/iconfinder_vector_65_09_473792 1.svg" alt="creditCard">BankDash.</div>
+
+        <div class="tabs">
+            <a href="index.html" class="tabs__tab">
+                <div class="tabs__tab__icon"><img src="./icons/home 2.svg" alt="home"></div>
+                <h5 id="select">Dashboard</h5>
+            </a>
+            <a href="transactions.html" class="tabs__tab">
+                <div class="tabs__tab__icon"><img src="./icons/transfer 1.svg" alt="transfer"></div>
+                <h5>Transactions</h5>
+            </a>
+            <a href="account.html" class="tabs__tab">
+                <div class="tabs__tab__icon"><img src="./icons/user 3 1.svg" alt="user"> </div>
+                <h5>Accounts</h5>
+            </a>
+            <div class="tabs__tab">
+                <div class="tabs__tab__icon"> <img src="./icons/economic-investment 1.svg" alt="economic-investment"></div>
+                <h5>Investments</h5>
+            </div>
+            <div class="tabs__tab">
+                <div class="tabs__tab__icon"><img src="./icons/credit-card 1.svg" alt="credit-card "> </div>
+                <h5>Credit Cards</h5>
+            </div>
+            <div class="tabs__tab">
+                <div class="tabs__tab__icon"> <img src="./icons/loan 1.svg" alt="loan"></div>
+                <h5>Loans</h5>
+            </div>
+            <div class="tabs__tab">
+                <div class="tabs__tab__icon"> <img src="./icons/service 1.svg" alt="service"></div>
+                <h5>Sercices</h5>
+            </div>
+            <div class="tabs__tab">
+                <div class="tabs__tab__icon"><img src="./icons/econometrics 1.svg" alt="econometrics"> </div>
+                <h5>My Privileges</h5>
+            </div>
+            <div class="tabs__tab">
+                <div class="tabs__tab__icon"><img src="./icons/settings solid 1.svg" alt="settings"> </div>
+                <h5>Setting</h5>
+            </div>
+        </div>
+        <div class="select-item" style="top: 100px;"></div>
+    </aside>
+
+
+    <main>
+        
+        <header class="header">
+            <div class="header__left-side"> 
+            <div id="menu"><img src="./icons/Group 692.svg" alt="menu"></div>
+            <h1>Overview</h1>
+            <div class="header__left-side__account" id="account"></div>
+        </div>
+        <div class="header__right-side">
+            <div class="header__right-side__search-bar">
+                <img src="./icons/magnifying-glass 1.svg" alt="search">
+                <h4>Search for something</h4>
+            </div>
+            <div class="header__right-side__icon"><img src="./icons/settings 1.svg" alt="settings"></div>
+            <div class="header__right-side__icon"><img src="./icons/002-notification-1.svg" alt="notification"></div>
+            <div class="header__right-side__account" id="account"></div>
+        </div>
+        </header>
+
+        <section class="main-page">
+            <section class="main-page__section">
+                <div class="main-page__section__title">
+                <h2>My Cards</h2>
+                <h3 >See All</h3 >
+                </div>
+            <div class="main-page__section__body">
+                <div class="my-cards">
+                    <div class="card select-card">
+                    <div class="card__header">
+                    <div class="card__header__left">
+                        <h4 style="font-size: 0.8rem;">Balance</h4>
+                        <h2 >$5,756</h2>
+                    </div>
+                    <div><img src="./icons/Chip_CardW.svg" alt="Chip_Card"></div>
+                </div>
+
+                <div class="card__mid">
+                    <div class="card__mid__side">
+                        <h4>CARD HOLDER</h4>
+                        <h3>Eddy Cusuma</h3>
+                    </div>
+                    <div class="card__mid__side">
+                        <h4>VALID THRU</h4>
+                        <h3>12/22</h3>
+                    </div>
+                </div>
+                <div class="card__footer">
+                    <h2>3778 **** **** 1234</h2>
+                    <div><img src="./icons/Group 17w.svg" alt="masterCard"></div>
+                </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card__header">
+                    <div class="card__header__left">
+                        <h4 style="font-size: 0.8rem;">Balance</h4>
+                        <h2>$5,756</h2>
+                    </div>
+                    <div><img src="./icons/Chip_Card.svg" alt="Chip_Card"></div>
+                </div>
+                <div class="card__mid">
+                    <div class="card__mid__side">
+                        <h4>CARD HOLDER</h4>
+                        <h3>Eddy Cusuma</h3>
+                    </div>
+                    <div class="card__mid__side">
+                        <h4>VALID THRU</h4>
+                        <h3>12/22</h3>
+                    </div>
+                </div>
+                <div class="card__footer">
+                    <h2>3778 **** **** 1234</h2>
+                    <div><img src="./icons/Group 17.svg" alt="masterCard"></div>
+                </div>
+                </div>
+                </div>
+            </div>
+            </section>
+            
+
+
+            <section class="main-page__section">
+                <div class="main-page__section__title">
+                <h2>Recent Transection</h2>
+                </div>
+            <div class="main-page__section__body">
+                <div class="Recent_Transection">
+                    <div class="Recent_Transection__transection">
+                        <div style= "background-color: var(--yellow);" class="Recent_Transection__transection__icon">
+                            <img src="./icons/iconfinder_business_finance_money-13_2784281 1.svg" alt="business_finance_money">
+                        </div>
+                        <div class="Recent_Transection__transection__title">
+                            <h3>Deposit from my Card</h3>
+                            <h4>28 January 2021</h4>
+                        </div>
+                        <div style="color: var(--red);" class="Recent_Transection__transection__price">
+                            -$850
+                        </div>
+                    </div>
+                <div class="Recent_Transection__transection">
+                    <div style= "background-color: var(--lightblue);" class="Recent_Transection__transection__icon">
+                        <img src="./icons/iconfinder_paypal_payment_pay_5340264 1.svg" alt="paypal_payment">
+                    </div>
+                    <div class="Recent_Transection__transection__title">
+                        <h3>Deposit Paypal</h3>
+                        <h4>25 January 2021</h4>
+                    </div>
+                    <div style="color: var(--green);" class="Recent_Transection__transection__price">
+                        +$2,500
+                    </div>
+                </div>
+                <div class="Recent_Transection__transection">
+                    <div style= "background-color: var(--lightergreen);" class="Recent_Transection__transection__icon">
+                        <img src="./icons/iconfinder_6_4753731 1.svg" alt="iconfinder_vector">
+                    </div>
+                    <div class="Recent_Transection__transection__title">
+                        <h3>Jemi Wilson </h3>
+                        <h4>21 January 2021</h4>
+                    </div>
+                    <div style="color: var(--green);" class="Recent_Transection__transection__price">
+                        +$5,400
+                    </div>
+                </div>
+            </div>
+                </div>
+            </section>
+
+
+
+
+            <section class="main-page__section">
+                <div class="main-page__section__title">
+                <h2>Weekly Activity</h2>
+                </div>
+            <div class="main-page__section__body">
+                
+                <div class="Weekly_Activity">
+                    <div class="graf">
+                    <div class="graf__month">
+                        <div class="graf__month__rows">
+                            <div id="one" class="blue"></div>
+                            <div id="four" class="green"></div>
+                        </div>
+                        <h4>Sat</h4>
+                    </div>
+                    <div class="graf__month">
+                        <div class="graf__month__rows">
+                            <div id="three" class="blue"></div>
+                            <div id="two" class="green"></div>
+                        </div>
+                        <h4>Sun</h4>
+                    </div>
+                    <div class="graf__month">
+                        <div class="graf__month__rows">
+                            <div id="three" class="blue"></div>
+                            <div id="four" class="green"></div>
+                        </div>
+                        <h4>Mon</h4>
+                    </div>
+                    <div class="graf__month">
+                        <div class="graf__month__rows">
+                            <div id="one" class="blue"></div>
+                            <div id="three" class="green"></div>
+                        </div>
+                        <h4>Tue</h4>
+                    </div>
+                    <div class="graf__month">
+                        <div class="graf__month__rows">
+                            <div id="five" class="blue"></div>
+                            <div id="four" class="green"></div>
+                        </div>
+                        <h4>Wed</h4>
+                    </div>
+                    <div class="graf__month">
+                        <div class="graf__month__rows">
+                            <div id="two" class="blue"></div>
+                            <div id="four" class="green"></div>
+                        </div>
+                        <h4>Thu</h4>
+                    </div>
+                    <div class="graf__month">
+                        <div class="graf__month__rows">
+                            <div id="two" class="blue"></div>
+                            <div id="three" class="green"></div>
+                        </div>
+                        <h4>Fri</h4>
+                    </div>
+                </div>
+
+                <div class="graf-bg">
+                    <div class="graf-bg__top">
+                        <div class="graf-bg__top__alment">
+                        <div style="background-color: var(--lightgreen);" class="dot"></div>
+                        <h4>Diposit</h4>
+                    </div>
+                    <div class="graf-bg__top__alment">
+                        <div style="background-color: var(--pink);" class="dot"></div>
+                        <h4>Withdraw</h4>
+                    </div>
+                    </div>
+                    <div class="graf-bg__bottom">
+                        <div class="graf-bg__bottom__nums">
+                            <h4>500</h4>
+                            <h4>400</h4>
+                            <h4>300</h4>
+                            <h4>200</h4>
+                            <h4>100</h4>
+                            <h4>0</h4>
+                        </div>
+                        <div class="graf-bg__bottom__lines">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+            </section>
+
+
+
+
+            <section class="main-page__section">
+                <div class="main-page__section__title">
+                <h2>Expense Statistics</h2>
+                </div>
+            <div class="main-page__section__body">
+                <div class="Expense-Statistics" >
+                    <div class="Expense-Statistics__circle">
+
+                        <div class="Expense-Statistics__circle__orange-piece"></div>
+                        <div class="Expense-Statistics__circle__pink-piece"></div>
+                        <div class="Expense-Statistics__circle__blue-piece"></div>
+                        <div class="Expense-Statistics__circle__darkblue-piece"></div>
+                        <div class="Expense-Statistics__circle__white-bg"></div>
+                        <div class="Expense-Statistics__circle__name" id="name1">30% <br><span>Entertainment </span></div>
+                        <div class="Expense-Statistics__circle__name" id="name2">15% <br><span>Bill Expense</span></div>
+                        <div class="Expense-Statistics__circle__name" id="name3">20% <br><span>Investment</span></div>
+                        <div class="Expense-Statistics__circle__name" id="name4">35% <br><span>Others</span></div>
+
+                    </div>
+
+                </div>
+            </div>
+            </section>
+
+
+
+
+
+
+
+
+            <section class="main-page__section">
+                <div class="main-page__section__title">
+                <h2>Quick Transfer</h2>
+                </div>
+            <div class="main-page__section__body">
+                <div class="Quick-Transfer" >
+                    <div class="Quick-Transfer__top">
+                        <div class="Quick-Transfer__top__account">
+                            <div class="icon" id="img1"></div>
+                            <h6 style="font-weight: 900;">Livia Bator</h6>
+                            <h4 style="font-weight: 900;">CEO</h4>
+                        </div>
+                        <div class="Quick-Transfer__top__account">
+                            <div class="icon" id="img2"></div>
+                            <h6 >Randy Press</h6>
+                            <h4 >Director</h4>
+                        </div>
+                        <div class="Quick-Transfer__top__account">
+                            <div class="icon" id="img3"></div>
+                            <h6 >Workman</h6>
+                            <h4 >Designer</h4>
+                        </div>
+                        <button><img src="./icons/Vector 1.svg" alt="Vector"></button>
+                    </div>
+                    <div class="Quick-Transfer__bottom">
+                        <h4>Writh Amount</h4>
+                        <div class="Quick-Transfer__bottom__ammount">
+                            <h4>525.50</h4>
+                            <div class="send"><h6 style="color: rgba(255, 255, 255, 1);">Send</h6> <img style="width: 26px; height: 22.6px;" src="./icons/Vector.svg" alt="Vector"> </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            </section>
+
+
+
+
+
+
+            <section class="main-page__section">
+                <div class="main-page__section__title">
+                <h2>Balance History</h2>
+                </div>
+            <div class="main-page__section__body">
+                <div class="Balance-History" >
+                </div>
+            </div>
+            </section>
+    </section>
+    </main>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+.main-page {
+  gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  max-width: 1440px;
+}
+.main-page__section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-page__section__title {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  width: 100%;
+}
+@media (max-width: 400px) {
+  .main-page__section__title {
+    width: 350px;
+  }
+}
+.main-page__section__body .two-item {
+  display: flex;
+  gap: 20px;
+}
+.main-page__section__body .two-item .item {
+  height: 120px;
+  width: 255px;
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  padding: 25px;
+  gap: 20px;
+}
+.main-page__section__body .two-item .item__icon {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: aquamarine;
+  padding: 20px;
+  text-align: center;
+}
+.main-page__section__body .two-item .item__name-amount {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.main-page__section__body .two-item .item__name-amount h2 {
+  font-size: 1.5625rem;
+  font-weight: 600;
+  line-height: 30.26px;
+}
+.main-page__section__body .two-item .item__name-amount h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 19.36px;
+}
+.main-page__section__body .transactions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 730px;
+  height: 235px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 25px;
+}
+.main-page__section__body .transactions .transaction {
+  text-align: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-page__section__body .transactions .transaction__icon {
+  height: 55px;
+  width: 55px;
+  border-radius: 20px;
+  background-color: cadetblue;
+  padding: 15px;
+  text-align: center;
+}
+.main-page__section__body .transactions .transaction__name-date {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+  width: 156px;
+}
+.main-page__section__body .transactions .transaction__data {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.main-page__section__body .transactions .transaction__price {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: end;
+}
+.main-page__section__body .my-cards {
+  display: flex;
+  gap: 25px;
+}
+.main-page__section__body .my-cards .card {
+  background-color: white;
+  width: 350px;
+  height: 235px;
+  border-radius: 30px;
+  padding-top: 10px;
+}
+.main-page__section__body .my-cards .card__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-right: 25px;
+  padding-bottom: 0;
+}
+.main-page__section__body .my-cards .card__header__left {
+  display: flex;
+  flex-direction: column;
+}
+.main-page__section__body .my-cards .card__mid {
+  display: flex;
+  padding: 20px;
+  padding-bottom: 37px;
+  gap: 50px;
+}
+.main-page__section__body .my-cards .card__footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-page__section__body .my-cards .select-card {
+  background: linear-gradient(107.38deg, #2D60FF 2.61%, #539BFF 101.2%);
+}
+.main-page__section__body .my-cards .select-card h2 {
+  color: white;
+}
+.main-page__section__body .my-cards .select-card h3 {
+  color: white;
+}
+.main-page__section__body .my-cards .select-card h4 {
+  color: white;
+}
+.main-page__section__body .my-cards .select-card .card__footer {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.main-page__section__body .debit {
+  height: 364px;
+  width: 730px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 30px;
+  position: relative;
+}
+.main-page__section__body .debit__header {
+  display: flex;
+  justify-content: space-between;
+}
+.main-page__section__body .debit__header__left {
+  display: flex;
+  gap: 2px;
+  text-align: end;
+}
+.main-page__section__body .debit__header__right {
+  display: flex;
+  gap: 10px;
+}
+.main-page__section__body .debit__header__right .dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 5px;
+}
+.main-page__section__body .debit .graf {
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  z-index: 1;
+  top: 90px;
+  left: 30px;
+}
+.main-page__section__body .debit .graf__month {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  width: 70px;
+  justify-content: end;
+}
+.main-page__section__body .debit .graf__month__rows {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: end;
+}
+.main-page__section__body .debit .graf__month__rows .blue {
+  background-color: var(--secondery);
+  width: 30px;
+  border-radius: 10px;
+}
+.main-page__section__body .debit .graf__month__rows .green {
+  background-color: var(--orenge2);
+  width: 30px;
+  border-radius: 10px;
+}

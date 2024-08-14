@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankDash.</title>
+    <link rel="stylesheet" href="./dist/global.css">
+    <link rel="stylesheet" href="./dist/account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="continer">
+    <aside>
+
+        <div class="title"> <img src="./icons/iconfinder_vector_65_09_473792 1.svg" alt="creditCard">BankDash.</div>
+
+        <div class="tabs">
+            <a href="index.html" class="tabs__tab">
+                <div class="tabs__tab__icon"><img src="./icons/Vector (2).svg" alt="home"></div>
+                <h5 >Dashboard</h5>
+            </a>
+            <a href="transactions.html" class="tabs__tab">
+                <div class="tabs__tab__icon"><img src="./icons/transfer 1.svg" alt="transfer"></div>
+                <h5 >Transactions</h5>
+            </a>
+            <a href="account.html" class="tabs__tab">
+                <div class="tabs__tab__icon"><img src="./icons/user 3 1(1).svg" alt="user"> </div>
+                <h5 id="select">Accounts</h5>
+            </a>
+            <div class="tabs__tab">
+                <div class="tabs__tab__icon"> <img src="./icons/economic-investment 1.svg" alt="economic-investment"></div>
+                <h5>Investments</h5>
+            </div>
+            <div class="tabs__tab">
+                <div class="tabs__tab__icon"><img src="./icons/credit-card 1.svg" alt="credit-card "> </div>
+                <h5>Credit Cards</h5>
+            </div>
+            <div class="tabs__tab">
+                <div class="tabs__tab__icon"> <img src="./icons/loan 1.svg" alt="loan"></div>
+                <h5>Loans</h5>
+            </div>
+            <div class="tabs__tab">
+                <div class="tabs__tab__icon"> <img src="./icons/service 1.svg" alt="service"></div>
+                <h5>Sercices</h5>
+            </div>
+            <div class="tabs__tab">
+                <div class="tabs__tab__icon"><img src="./icons/econometrics 1.svg" alt="econometrics"> </div>
+                <h5>My Privileges</h5>
+            </div>
+            <div class="tabs__tab">
+                <div class="tabs__tab__icon"><img src="./icons/settings solid 1.svg" alt="settings"> </div>
+                <h5>Setting</h5>
+            </div>
+        </div>
+        <div class="select-item" style="top: 240px; background-color: var(--secondery);"></div>
+    </aside>
+
+
+    <main>
+        
+        <header class="header">
+            <div class="header__left-side"> 
+            <div id="menu"><img src="./icons/Group 692.svg" alt="menu"></div>
+            <h1>Accounts</h1>
+            <div class="header__left-side__account" id="account"></div>
+        </div>
+        <div class="header__right-side">
+            <div class="header__right-side__search-bar">
+                <img src="./icons/magnifying-glass 1.svg" alt="search">
+                <h4>Search for something</h4>
+            </div>
+            <div class="header__right-side__icon"><img src="./icons/settings 1.svg" alt="settings"></div>
+            <div class="header__right-side__icon"><img src="./icons/002-notification-1.svg" alt="notification"></div>
+            <div class="header__right-side__account" id="account"></div>
+        </div>
+        </header>
+
+
+        <section class="main-page">
+            <section class="main-page__section">
+                <div class="main-page__section__body">
+
+                    <div class="two-item">
+                    <div class="item">
+                    <div style="background-color: var(--yellow);" class="item__icon"><img src="./icons/money-tag 1.svg" alt="money"></div>
+                    <div class="item__name-amount">
+                        <h5>My Balance</h5>
+                        <h2>$12,750</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <div style="background-color: var(--lightblue);" class="item__icon"><img src="./icons/Group.svg" alt="money"></div>
+                    <div class="item__name-amount">
+                        <h5>Income</h5>
+                        <h2>$5,600</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </section>
+            <section class="main-page__section">
+                <div class="main-page__section__body">
+                    <div class="two-item">
+                    <div class="item">
+                    <div style="background-color: var(--lightpink);" class="item__icon"><img src="./icons/001-medical.svg" alt="money"></div>
+                    <div class="item__name-amount">
+                        <h5>Expense</h5>
+                        <h2>$3,460</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <div style="background-color: var(--lightergreen);" class="item__icon"><img src="./icons/003-saving.svg" alt="money"></div>
+                    <div class="item__name-amount">
+                        <h5>Total Saving</h5>
+                        <h2>$7,920</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </section>
+
+
+            <section class="main-page__section">
+                <div class="main-page__section__title">
+                    <h2>Last Transaction</h2>
+                    </div>
+                <div class="main-page__section__body">
+                    <div class="transactions">
+                        <div class="transaction">
+                            <div style="background-color: var(--lightergreen);" class="transaction__icon"><img src="./icons/renew 1.svg" alt="renew"></div>
+                            <div class="transaction__name-date">
+                                <h6>Spotify Subscription</h6>
+                                <h4>25 Jan 2021</h4>
+                            </div>
+                            <div class="transaction__data">
+                            <h4>Shopping</h4>
+                            <h4>1234 ****</h4>
+                            <h4>Pending</h4>
+                        </div>
+                            <div style="color: var(--red);" class="transaction__price">
+                                -$150
+                            </div>
+
+                        </div>
+                        <div class="transaction">
+                            <div style="background-color: var(--lightblue);" class="transaction__icon"><img src="./icons/settings 2 1.svg" alt="settings"></div>
+                            <div class="transaction__name-date">
+                                <h6>Mobile Service</h6>
+                                <h4>25 Jan 2021</h4>
+                            </div>
+                            <div class="transaction__data">
+                            <h4>Service</h4>
+                            <h4>1234 ****</h4>
+                            <h4>Completed</h4>
+                        </div>
+                            <div style="color: var(--red);" class="transaction__price">
+                                -$150
+                            </div>
+
+                        </div>
+                        <div class="transaction">
+                            <div style="background-color: var(--lightpink);" class="transaction__icon"><img src="./icons/user2 1.svg" alt="user"></div>
+                            <div class="transaction__name-date">
+                                <h6>Emilly Wilson</h6>
+                                <h4>25 Jan 2021</h4>
+                            </div>
+                            <div class="transaction__data">
+                            <h4>Transfer</h4>
+                            <h4>1234 ****</h4>
+                            <h4>Completed</h4>
+                        </div>
+                            <div style="color: var(--green);" class="transaction__price">
+                                -$150
+                            </div>
+
+                        </div>
+                    </div>
+                 </div>
+            </section>
+
+                <section class="main-page__section">
+                    <div class="main-page__section__title">
+                    <h2>My Card</h2>
+                    <h3 >See All</h3 >
+                    </div>
+                <div class="main-page__section__body">
+                    <div class="my-cards">
+                        <div class="card select-card">
+                        <div class="card__header">
+                        <div class="card__header__left">
+                            <h4 style="font-size: 0.8rem;">Balance</h4>
+                            <h2 >$5,756</h2>
+                        </div>
+                        <div><img src="./icons/Chip_CardW.svg" alt="Chip_Card"></div>
+                    </div>
+    
+                    <div class="card__mid">
+                        <div class="card__mid__side">
+                            <h4>CARD HOLDER</h4>
+                            <h3>Eddy Cusuma</h3>
+                        </div>
+                        <div class="card__mid__side">
+                            <h4>VALID THRU</h4>
+                            <h3>12/22</h3>
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <h2>3778 **** **** 1234</h2>
+                        <div><img src="./icons/Group 17w.svg" alt="masterCard"></div>
+                    </div>
+                    </div>
+         </section>
+
+         <section class="main-page__section">
+            <div class="main-page__section__title">
+                <h2>Debit & Credit Overview</h2>
+                </div>
+                <div class="main-page__section__body">
+                    <div class="debit">
+                        <header class="debit__header">
+                            <div class="debit__header__left">
+                            <h6>$7,560</h6>
+                            <h4>Debited & </h4>
+                            <h6>$5,420</h6>
+                            <h4>Credited in this Week</h4>
+                        </div>
+                        <div class="debit__header__right">
+                            <div class="dot" style="background-color: var(--secondery);"></div>
+                            <h4>Debit</h4>
+                            <div class="dot" style="background-color: var(--pink);"></div>
+                            <h4>Credit</h4>
+
+                        </div>
+                        </header>
+
+                    <div class="graf">
+                        <div class="graf__month">
+                            <div class="graf__month__rows">
+                                <div style="height: 135px;" class="blue"></div>
+                                <div style="height: 234px;" class="green"></div>
+                            </div>
+                            <h4>Sat</h4>
+                        </div>
+                        <div class="graf__month">
+                            <div class="graf__month__rows">
+                                <div style="height: 106px;" class="blue"></div>
+                                <div style="height: 186px;" class="green"></div>
+                            </div>
+                            <h4>Sun</h4>
+                        </div>
+                        <div class="graf__month">
+                            <div class="graf__month__rows">
+                                <div style="height: 102px;" class="blue"></div>
+                                <div style="height: 139px;" class="green"></div>
+                            </div>
+                            <h4>Mon</h4>
+                        </div>
+                        <div class="graf__month">
+                            <div class="graf__month__rows">
+                                <div style="height: 212px;" class="blue"></div>
+                                <div style="height: 123px;" class="green"></div>
+                            </div>
+                            <h4>Tue</h4>
+                        </div>
+                        <div class="graf__month">
+                            <div class="graf__month__rows">
+                                <div style="height: 150px;" class="blue"></div>
+                                <div style="height: 214px;" class="green"></div>
+                            </div>
+                            <h4>Wed</h4>
+                        </div>
+                        <div class="graf__month">
+                            <div class="graf__month__rows">
+                                <div style="height: 158px;" class="blue"></div>
+                                <div style="height: 105px;" class="green"></div>
+                            </div>
+                            <h4>Thu</h4>
+                        </div>
+                        <div class="graf__month">
+                            <div class="graf__month__rows">
+                                <div style="height: 179px;" class="blue"></div>
+                                <div style="height: 216px;" class="green"></div>
+                            </div>
+                            <h4>Fri</h4>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+        </section>
+        <section class="main-page__section">
+            <div class="main-page__section__title">
+                <h2>Invoices Sent</h2>
+                </div>
+            <div class="main-page__section__body">
+                <div style="width: 350px; height: 364px; padding: 20px; padding-top: 30px; gap: 30px;" class="transactions">
+                    <div class="transaction">
+                        <div style="background-color: var(--lightergreen);" class="transaction__icon"><img src="./icons/Vector (3).svg" alt="apple"></div>
+                        <div class="transaction__name-date">
+                            <h6>Spotify Subscription</h6>
+                            <h4>25 Jan 2021</h4>
+                        </div>
+                            <h4>$450</h4>
+
+
+                    </div>
+                    <div class="transaction">
+                        <div style="background-color: var(--yellow);" class="transaction__icon"><img src="./icons/Group (1).svg" alt="icon"></div>
+                        <div class="transaction__name-date">
+                            <h6>Mobile Service</h6>
+                            <h4>25 Jan 2021</h4>
+                        </div>
+
+
+                            <h4>$160</h4>
+
+
+                    </div>
+                    <div class="transaction">
+                        <div style="background-color: var(--lightblue);" class="transaction__icon"><img src="./icons/playstation 1.svg" alt="user"></div>
+                        <div class="transaction__name-date">
+                            <h6>Emilly Wilson</h6>
+                            <h4>25 Jan 2021</h4>
+                        </div>
+                            <h4>$1085</h4>
+
+                    </div>
+                    <div class="transaction">
+                        <div style="background-color: var(--lightpink);" class="transaction__icon"><img src="./icons/user2 1.svg" alt="user"></div>
+                        <div class="transaction__name-date">
+                            <h6>Emilly Wilson</h6>
+                            <h4>25 Jan 2021</h4>
+                        </div>
+
+                        <h4>$90</h4>
+
+                    </div>
+                </div>
+             </div>
+        </section>
+        
+         
+
+
+
+
+
+
+        </section>
+    </main>
+        
