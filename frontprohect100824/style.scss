@@ -97,6 +97,12 @@
                     }
                     
                 }
+                .card:hover {
+                    background: linear-gradient(107.38deg, #4C49ED 2.61%, #0A06F4 101.2%);
+                    h2{color: white;}
+                    h3{color: white;}
+                    h4{color: white;}
+                }
                 .select-card{
                     background: linear-gradient(107.38deg, #4C49ED 2.61%, #0A06F4 101.2%);
                     h2{color: white;}

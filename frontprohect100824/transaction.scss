@@ -106,6 +106,7 @@
                 }
 
             }
+
             .My-Expense{
                 background-color: white;
                 width: 350px;
@@ -152,8 +153,10 @@
                             height: 110px;
                         }
                     }
+
                     #h3{
                         height:50px;
+                        
                         @media (max-width : 1440px) {
                             height: 40px;
 
@@ -163,6 +166,7 @@
                         height: 100px;
                         @media (max-width : 1440px) {
                             height:100px;
+
 
                         }
                     }
@@ -180,6 +184,17 @@
                     }
                     
                 }
+            }
+            .My-Expense__rows__row:hover {
+                animation: fire 5s;
+            
+            }
+            @keyframes fire{
+
+                to{
+                    height: 0px;
+                }
+            
             }
             .bar{
                 display: flex;

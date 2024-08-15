@@ -161,6 +161,9 @@ aside .tabs__tab {
   display: flex;
   gap: 20px;
 }
+aside .tabs .tabs__tab h5:hover {
+  color: var(--primary);
+}
 aside .select-item {
   position: absolute;
   top: 0;

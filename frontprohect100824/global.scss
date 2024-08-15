@@ -155,8 +155,12 @@ aside{
             display: flex;
             gap: 20px;
         }
+        .tabs__tab h5:hover{
+            color: var(--primary);
+        }
 
     }
+
     .select-item{
         position: absolute;
         top: 0;

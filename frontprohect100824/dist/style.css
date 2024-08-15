@@ -101,6 +101,18 @@
     padding-bottom: 5px;
   }
 }
+.main-page__section__body .my-cards .card:hover {
+  background: linear-gradient(107.38deg, #4C49ED 2.61%, #0A06F4 101.2%);
+}
+.main-page__section__body .my-cards .card:hover h2 {
+  color: white;
+}
+.main-page__section__body .my-cards .card:hover h3 {
+  color: white;
+}
+.main-page__section__body .my-cards .card:hover h4 {
+  color: white;
+}
 .main-page__section__body .my-cards .select-card {
   background: linear-gradient(107.38deg, #4C49ED 2.61%, #0A06F4 101.2%);
 }

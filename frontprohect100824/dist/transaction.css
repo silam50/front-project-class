@@ -186,6 +186,14 @@
     border-radius: 7px;
   }
 }
+.main-page__section__body .My-Expense__rows__row:hover {
+  animation: fire 5s;
+}
+@keyframes fire {
+  to {
+    height: 0px;
+  }
+}
 .main-page__section__body .bar {
   display: flex;
   gap: 70px;
