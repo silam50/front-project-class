@@ -125,6 +125,7 @@
   .main-page__section__body .My-Expense {
     width: 325px;
     height: 214px;
+    gap: 15px;
   }
 }
 .main-page__section__body .My-Expense__rows {
@@ -184,6 +185,11 @@
   .main-page__section__body .My-Expense__rows__row {
     width: 22px;
     border-radius: 7px;
+  }
+}
+@media (max-width: 410px) {
+  .main-page__section__body .My-Expense__rows__row {
+    width: 35px;
   }
 }
 .main-page__section__body .My-Expense__rows__row:hover {
