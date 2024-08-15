@@ -4,11 +4,11 @@
   flex-wrap: wrap;
   padding: 30px;
   max-width: 1440px;
-  width: auto;
 }
 @media (max-width: 410px) {
   .main-page {
-    flex-direction: column;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
   }
 }
 .main-page__section {
@@ -24,7 +24,7 @@
 }
 @media (max-width: 400px) {
   .main-page__section__title {
-    width: 350px;
+    width: 275px;
   }
 }
 .main-page__section__body .my-cards {
@@ -41,7 +41,7 @@
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .my-cards .card {
     width: 231px;
     height: 170px;
@@ -58,7 +58,7 @@
   padding: 20px;
   padding-right: 25px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .my-cards .card__header {
     padding: 15px;
     padding-bottom: 0;
@@ -73,7 +73,7 @@
   padding: 20px;
   gap: 50px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .my-cards .card__mid {
     padding: 10px;
     padding-bottom: 5px;
@@ -84,7 +84,7 @@
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .my-cards .card__footer {
     padding: 15px;
     padding-bottom: 5px;
@@ -116,8 +116,9 @@
 }
 @media (max-width: 1440px) {
   .main-page__section__body .My-Expense {
-    width: 325px;
-    height: 214px;
+    width: 231px;
+    height: 170px;
+    padding: 20px;
   }
 }
 @media (max-width: 410px) {
@@ -141,11 +142,49 @@
   text-align: center;
   color: #343c6a;
 }
+.main-page__section__body .My-Expense__rows #h1 {
+  height: 90px;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .My-Expense__rows #h1 {
+    height: 70px;
+  }
+}
+.main-page__section__body .My-Expense__rows #h2 {
+  height: 130px;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .My-Expense__rows #h2 {
+    height: 110px;
+  }
+}
+.main-page__section__body .My-Expense__rows #h3 {
+  height: 50px;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .My-Expense__rows #h3 {
+    height: 40px;
+  }
+}
+.main-page__section__body .My-Expense__rows #h4 {
+  height: 100px;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .My-Expense__rows #h4 {
+    height: 100px;
+  }
+}
 .main-page__section__body .My-Expense__rows__row {
   background-color: var(--background2);
   width: 37px;
   height: 10px;
   border-radius: 10px;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .My-Expense__rows__row {
+    width: 22px;
+    border-radius: 7px;
+  }
 }
 .main-page__section__body .bar {
   display: flex;
@@ -190,22 +229,64 @@
   padding: 30px;
   gap: 15px;
 }
+@media (max-width: 1440px) {
+  .main-page__section__body .Recent-Transactions {
+    width: 743px;
+    height: 277px;
+    border-radius: 20px;
+    padding: 10px;
+    gap: 5px;
+  }
+}
 @media (max-width: 410px) {
   .main-page__section__body .Recent-Transactions {
     width: 325px;
     height: 299px;
     padding: 15px;
-    padding-top: 5px;
-    gap: 5px;
+    padding-top: 20px;
+    gap: 10px;
   }
 }
 .main-page__section__body .Recent-Transactions__title {
   display: flex;
   gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .Recent-Transactions__title {
+    width: 743px;
+    height: 277px;
+    border-radius: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+    gap: 10px;
+    width: 100%;
+  }
 }
 @media (max-width: 410px) {
   .main-page__section__body .Recent-Transactions__title {
     display: none;
+  }
+}
+.main-page__section__body .Recent-Transactions__title .icon-name {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .Recent-Transactions__title .icon-name {
+    gap: 50px;
+  }
+}
+.main-page__section__body .Recent-Transactions__title .all {
+  display: flex;
+  gap: 50px;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .Recent-Transactions__title .all {
+    gap: 50px;
+    padding-left: 90px;
   }
 }
 .main-page__section__body .Recent-Transactions__Recent-Transaction {
@@ -214,9 +295,28 @@
   border-top: 1px solid #ebeef2;
   padding-top: 15px;
   align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .Recent-Transactions__Recent-Transaction {
+    padding-top: 5px;
+  }
+}
+.main-page__section__body .Recent-Transactions__Recent-Transaction .icon-name {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 200px;
 }
 .main-page__section__body .Recent-Transactions__Recent-Transaction .all {
   display: flex;
+  gap: 30px;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .Recent-Transactions__Recent-Transaction .all {
+    gap: 30px;
+  }
 }
 @media (max-width: 410px) {
   .main-page__section__body .Recent-Transactions__Recent-Transaction .all {
@@ -227,9 +327,14 @@
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 410px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Recent-Transactions__Recent-Transaction .name-date {
     width: 150px;
+  }
+}
+@media (max-width: 410px) {
+  .main-page__section__body .Recent-Transactions__Recent-Transaction .name-date {
+    width: 300px;
     align-items: start;
   }
 }
@@ -241,9 +346,6 @@
     display: block;
   }
 }
-.main-page__section__body .Recent-Transactions__Recent-Transaction .name-date h6 {
-  text-align: end;
-}
 .main-page__section__body .Recent-Transactions__Recent-Transaction__download {
   width: 100px;
   height: 35px;
@@ -252,7 +354,14 @@
   color: #123288;
   text-align: center;
   padding: 5px;
-  margin-left: 100px;
+  align-self: end;
+  justify-self: end;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .Recent-Transactions__Recent-Transaction__download {
+    width: 80px;
+    height: 30px;
+  }
 }
 @media (max-width: 410px) {
   .main-page__section__body .Recent-Transactions__Recent-Transaction__download {
@@ -265,6 +374,12 @@
   font-weight: 400;
   line-height: 19.36px;
   color: #123288;
+}
+.main-page__section__body .Recent-Transactions__Recent-Transaction__download #select {
+  color: #1814F3;
+}
+.main-page__section__body .Recent-Transactions__Recent-Transaction #select1 {
+  border: 1px solid #1814F3;
 }
 .main-page__section__body footer {
   color: white;

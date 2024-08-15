@@ -8,10 +8,12 @@
     
         
     }
-    @media (max-width : 375px) {
-        
+    @media (max-width : 410px) {
+        overflow-x:auto;
+        scroll-snap-type: x mandatory;
     }
 
+    
 
     &__section{
         display: flex;
@@ -23,7 +25,7 @@
             height: 30px;
             width: 100%;
             @media (max-width : 400px) {
-                width: 350px;
+                width: 325px;
             }
         }
 
@@ -39,6 +41,19 @@
             display: flex;
             padding: 25px;
             gap: 20px;
+            @media (max-width : 1440px) {
+                width: 167px;
+                height: 90px;
+                padding: 18px;
+                gap: 0px;
+            }
+            @media (max-width : 400px) {
+                width: 155px;
+                height: 85px;
+                padding: 5px;
+                padding-top: 15px;
+
+            }
             &__icon{
                 height: 70px;
                 width: 70px;
@@ -46,12 +61,25 @@
                 background-color: aquamarine;
                 padding: 20px;
                 text-align: center;
+                @media (max-width : 1440px) {
+                    height: 50px;
+                    width: 50px;
+                    padding: 10px;
+                }
+                @media (max-width : 400px) {
+                    width: 45px;
+                    height: 45px;
+                    padding: 6px;
+                }
             }
             &__name-amount{
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
                 text-align: center;
+                @media (max-width : 1440px) {
+                    gap: 5px;
+                }
                 h2{
                     font-size: 1.5625rem;
                     font-weight: 600;
@@ -69,6 +97,18 @@
 
         }
     }
+    #end{
+        width: 350px; height: 364px;
+        padding: 30px; padding-top: 40px; gap: 20px; 
+        @media (max-width : 1440px) {
+         padding-top: 30px; gap: 10px;
+         width: 231px; height: 270px;
+        }
+        @media (max-width : 400px) {
+            padding-top: 30px; gap: 10px;
+            width: 325px; height: 265px;
+         }
+    }
     .transactions{
         display: flex;
         flex-direction: column;
@@ -78,6 +118,19 @@
         background-color: white;
         border-radius: 25px;
         padding: 25px;
+        @media (max-width : 1440px) {
+            width: 487px;
+            height: 170px;
+            padding: 15px;
+            gap: 10px;
+
+        }
+        @media (max-width : 400px) {
+           width: 325px;
+           height: 199px;
+           padding: 30px;
+        }
+
         .transaction{
             text-align: center;
             display: flex;
@@ -91,6 +144,14 @@
                 background-color: cadetblue;
                 padding: 15px;
                 text-align: center;
+                @media (max-width : 1440px) {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 15px;
+                    padding: 6px;
+
+        
+                }
             }
             &__name-date{
                 display: flex;
@@ -98,12 +159,24 @@
                 align-items: start;
                 gap: 5px;
                 width: 156px;
+                @media (max-width : 1440px) {
+                    width: 135px;
+
+                }
 
             }
             &__data{
                 display: flex;
                 justify-content: space-between;
                 gap: 50px;
+                @media (max-width : 1440px) {
+                    width: 200px;
+                    gap: 20px;
+                }
+                @media (max-width : 400px) {
+                    display: none;
+                }
+                
             }
             &__price{
                 font-family: "Inter", sans-serif;
@@ -125,12 +198,29 @@
                 height: 235px;
                 border-radius: 30px;
                 padding-top: 10px;
+                justify-content: space-between;
+                display: flex;
+                flex-direction: column;
+                @media (max-width : 1440px) {
+                    width: 231px;
+                    height: 170px;
+                }
+                @media (max-width : 410px) {
+                    width: 325px;
+                    height: 197px;
+                }
                 &__header{
                     display: flex;
                     justify-content: space-between;
                     padding: 20px;
                     padding-right: 25px;
-                    padding-bottom: 0;
+                    @media (max-width : 1440px) {
+                        padding: 15px;
+                        padding-bottom: 0;
+
+        
+                    }
+
                     &__left{
                         display:flex;
                         flex-direction: column;
@@ -139,14 +229,22 @@
                 &__mid{
                     display: flex;
                     padding: 20px;
-                    padding-bottom: 37px;
                     gap: 50px;
+                    @media (max-width : 1440px) {
+                        padding: 10px;
+                        padding-bottom: 5px;
+
+                    }
                 }
 
                 &__footer{
                     padding: 20px;
                     display: flex;
                     justify-content: space-between;
+                    @media (max-width : 1440px) {
+                        padding: 15px;
+                        padding-bottom: 5px;
+                    }
 
                 }
                 
@@ -173,13 +271,27 @@
          border-radius: 25px;
          padding: 30px;
          position: relative;
+         @media (max-width : 1440px) {
+            width: 487px;
+            height: 270px;
+        }
+        @media (max-width : 400px) {
+            width: 325px;
+            height: 245px;
+         }
          &__header{
             display: flex;
             justify-content: space-between;
+            @media (max-width : 400px) {
+            justify-content: end;
+             }
             &__left{
                 display: flex;
                 gap: 2px;
                 text-align: end;
+                @media (max-width : 400px) {
+                   display: none;
+                 }
             }
             &__right{
                 display: flex;
@@ -198,6 +310,13 @@
             z-index: 1;
             top: 90px;
             left: 30px;
+            @media (max-width : 1440px) {
+                gap: 18px;
+            }
+            @media (max-width : 400px) {
+               gap: 15px;
+               top: 60px;
+             }
         &__month{
             display: flex;
             flex-direction: column;
@@ -205,20 +324,79 @@
             text-align: center;
             width: 70px;
             justify-content: end;
+            @media (max-width : 1440px) {
+                width: 48px;
+                gap: 8px;
+            }
+            @media (max-width : 400px) {
+                width: 25px;
+             }
             &__rows{
                 display: flex;
                 flex-direction: row;
                 gap: 10px;
                 align-items: end;
+                #one{
+                    height: 220px;
+                    @media (max-width : 1440px) {
+                        height: 150px;
+                    }
+                }
+                #two{
+                    height: 180px;
+                    @media (max-width : 1440px) {
+                        height: 130px;
+                    }
+                }
+                #three{
+                    height: 150px;
+                    @media (max-width : 1440px) {
+                        height: 110px;
+                    }
+                }
+                #four{
+                    height: 130px;
+                    @media (max-width : 1440px) {
+                        height: 90px;
+                    }
+                }
+                #five{
+                    height: 110px;
+                    @media (max-width : 1440px) {
+                        height: 70px;
+                    }
+                }
+                #six{
+                    height: 90px;
+                    @media (max-width : 1440px) {
+                        height: 50px;
+                    }
+                }
                 .blue{
                     background-color: var(--secondery);
                     width: 30px;
                     border-radius: 10px;
+                    @media (max-width : 1440px) {
+                        width: 20px;
+                        border-radius: 7px;
+                    }
+                    @media (max-width : 400px) {
+                        width: 10px;
+                        border-radius: 4px;
+                     }
                 }
                 .green{
                     background-color: var(--orenge2);
                     width: 30px;
                     border-radius: 10px;
+                    @media (max-width : 1440px) {
+                        width: 20px;
+                        border-radius: 7px;
+                    }
+                    @media (max-width : 400px) {
+                        width: 10px;
+                        border-radius: 4px;
+                     }
                 }
             }
         }

@@ -4,31 +4,36 @@
     flex-wrap: wrap;
     padding: 30px;
     max-width: 1440px;
-    width: auto;
+
+
     @media (min-width : 1440px) {
     
         
     }
     @media (max-width : 410px) {
-        flex-direction: column;
+        overflow-x:auto;
+        scroll-snap-type: x mandatory;
     }
+
 
 
     &__section{
         display: flex;
         flex-direction: column;
         gap: 20px;
+
         &__title{
             display: flex;
             justify-content: space-between;
             height: 30px;
             width: 100%;
             @media (max-width : 400px) {
-                width: 350px;
+                width: 275px;
             }
         }
 
         &__body{
+
             .my-cards{
                 display: flex;
                 gap: 25px;
@@ -41,7 +46,7 @@
                     justify-content: space-between;
                     display: flex;
                     flex-direction: column;
-                    @media (max-width : 1442px) {
+                    @media (max-width : 1440px) {
                         width: 231px;
                         height: 170px;
                     }
@@ -53,7 +58,7 @@
                         justify-content: space-between;
                         padding: 20px;
                         padding-right: 25px;
-                        @media (max-width : 1442px) {
+                        @media (max-width : 1440px) {
                             padding: 15px;
                             padding-bottom: 0;
 
@@ -69,7 +74,7 @@
                         display: flex;
                         padding: 20px;
                         gap: 50px;
-                        @media (max-width : 1442px) {
+                        @media (max-width : 1440px) {
                             padding: 10px;
                             padding-bottom: 5px;
 
@@ -80,7 +85,7 @@
                         padding: 20px;
                         display: flex;
                         justify-content: space-between;
-                        @media (max-width : 1442px) {
+                        @media (max-width : 1440px) {
                             padding: 15px;
                             padding-bottom: 5px;
                         }
@@ -110,8 +115,9 @@
                 padding: 30px;
                 gap: 10px;
                 @media (max-width : 1440px) {
-                    width: 325px;
-                    height: 214px;
+                    width: 231px;
+                    height: 170px;
+                    padding: 20px;
                 }
                 @media (max-width : 410px) {
                     width: 325px;
@@ -132,11 +138,44 @@
                         text-align: center;
                         color: rgba(52, 60, 106, 1);
                     }
+                    #h1{
+                        height:90px;
+                        @media (max-width : 1440px) {
+                            height: 70px;
+
+                        }
+
+                    }
+                    #h2{
+                        height:130px;
+                        @media (max-width : 1440px) {
+                            height: 110px;
+                        }
+                    }
+                    #h3{
+                        height:50px;
+                        @media (max-width : 1440px) {
+                            height: 40px;
+
+                        }
+                    }
+                    #h4{
+                        height: 100px;
+                        @media (max-width : 1440px) {
+                            height:100px;
+
+                        }
+                    }
                     &__row{
                         background-color: var(--background2);
                         width: 37px;
                         height: 10px;
                         border-radius: 10px;
+                        @media (max-width : 1440px) {
+                            width: 22px;
+                            border-radius: 7px;
+
+                        }
 
                     }
                     
@@ -183,21 +222,67 @@
                 margin-top: 25px;
                 padding: 30px;
                 gap: 15px;
+
+                @media (max-width : 1440px) {
+                    width: 743px;
+                    height: 277px;
+                    border-radius: 20px;
+                    padding: 10px;
+                    gap: 5px;
+
+
+                }
                 @media (max-width : 410px) {
                    width: 325px;
                    height: 299px;
                     padding: 15px;
-                    padding-top: 5px;
-                    gap: 5px;
+                    padding-top: 20px;
+                    gap: 10px;
+
+
                   
                  }
+
+
 
                 &__title{
                     display: flex;
                     gap: 10px;
+                    justify-content: space-between;
+                    align-items:center;
+
+                    @media (max-width : 1440px) {
+                        width: 743px;
+                        height: 277px;
+                        border-radius: 7px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        gap: 10px;
+                        width: 100%;
+
+    
+                    }
                     @media (max-width : 410px) {
                        display: none;
                     }
+                    .icon-name{
+                        display: flex;
+                        gap: 100px;
+                        align-items: center;
+                        @media (max-width : 1440px) {
+                            gap: 50px;
+                        }
+                    }
+                    .all{
+                        display: flex;
+                        gap: 50px;
+                        @media (max-width : 1440px) {
+                            gap: 50px;
+                            padding-left: 90px;
+                        }
+                    }
+
+
 
 
                 }
@@ -207,8 +292,25 @@
                     border-top: 1px solid rgba(235, 238, 242, 1) ;
                     padding-top: 15px;
                     align-items: center;
+                    width: 100%;
+                    justify-content: space-between;
+                    @media (max-width : 1440px) {
+                        padding-top: 5px;
+
+                    }
+                    .icon-name{
+                        display: flex;
+                        gap: 20px;
+                        align-items: center;
+                        width: 200px;
+                    }
                     .all{
                         display: flex;
+                        gap: 30px;
+                        @media (max-width : 1440px) {
+                            gap: 30px;
+    
+                        }
                         @media (max-width : 410px) {
                             display: none;
                          }
@@ -216,19 +318,20 @@
                     .name-date{
                         display: flex;
                         flex-direction: column;
+                        @media (max-width : 1440px) {
+                           width: 150px;
+                        }
                         @media (max-width : 410px) {
-                            width: 150px;
+                            width: 300px;
                             align-items: start  ;
-                         }
+                        }
                     .ss{
                         display: none;
                         @media (max-width : 410px) {
                             display: block;
                          }
                     }
-                    h6{
-                        text-align: end;
-                    }
+
 
                 }
                     &__download{
@@ -238,9 +341,14 @@
                         border: 1px solid rgba(18, 50, 136, 1);
                         color: rgba(18, 50, 136, 1);
                         text-align: center;
-                        padding: 5px;
-                        margin-left: 100px   ;
-                        
+                        padding: 5px;;
+                        align-self: end;
+                        justify-self: end;             
+                        @media (max-width : 1440px) {
+                            width: 80px;
+                            height: 30px;
+    
+                        }         
                         @media (max-width : 410px) {
                             display: none;
                          }
@@ -249,9 +357,17 @@
                             font-size: 1rem;
                             font-weight: 400;
                             line-height: 19.36px;
-                            color: rgba(18, 50, 136, 1);
+                            color: #123288;
+
                         
                         }
+                        #select{
+                            color: #1814F3;
+                        
+                        }
+                    }
+                    #select1{
+                        border:1px solid #1814F3;
                     }
 
                 }

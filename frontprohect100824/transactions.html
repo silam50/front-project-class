@@ -30,30 +30,30 @@
                 <div class="tabs__tab__icon"><img src="./icons/user 3 1.svg" alt="user"> </div>
                 <h5>Accounts</h5>
             </a>
-            <div class="tabs__tab">
+            <a class="tabs__tab">
                 <div class="tabs__tab__icon"> <img src="./icons/economic-investment 1.svg" alt="economic-investment"></div>
                 <h5>Investments</h5>
-            </div>
-            <div class="tabs__tab">
+            </a>
+            <a class="tabs__tab">
                 <div class="tabs__tab__icon"><img src="./icons/credit-card 1.svg" alt="credit-card "> </div>
                 <h5>Credit Cards</h5>
-            </div>
-            <div class="tabs__tab">
+            </a>
+            <a class="tabs__tab">
                 <div class="tabs__tab__icon"> <img src="./icons/loan 1.svg" alt="loan"></div>
                 <h5>Loans</h5>
-            </div>
-            <div class="tabs__tab">
+            </a>
+            <a class="tabs__tab">
                 <div class="tabs__tab__icon"> <img src="./icons/service 1.svg" alt="service"></div>
                 <h5>Sercices</h5>
-            </div>
-            <div class="tabs__tab">
+            </a>
+            <a class="tabs__tab">
                 <div class="tabs__tab__icon"><img src="./icons/econometrics 1.svg" alt="econometrics"> </div>
                 <h5>My Privileges</h5>
-            </div>
-            <div class="tabs__tab">
+            </a>
+            <a class="tabs__tab">
                 <div class="tabs__tab__icon"><img src="./icons/settings solid 1.svg" alt="settings"> </div>
                 <h5>Setting</h5>
-            </div>
+            </a>
         </div>
         <div class="select-item" style="top: 160px; background-color: var(--secondery);"></div>
     </aside>
@@ -68,12 +68,12 @@
             <div class="header__left-side__account" id="account"></div>
         </div>
         <div class="header__right-side">
-            <div class="header__right-side__search-bar">
+            <button class="header__right-side__search-bar">
                 <img src="./icons/magnifying-glass 1.svg" alt="search">
                 <h4>Search for something</h4>
-            </div>
-            <div class="header__right-side__icon"><img src="./icons/settings 1.svg" alt="settings"></div>
-            <div class="header__right-side__icon"><img src="./icons/002-notification-1.svg" alt="notification"></div>
+            </button>
+            <button class="header__right-side__icon"><img src="./icons/settings 1.svg" alt="settings"></button>
+            <button class="header__right-side__icon"><img src="./icons/002-notification-1.svg" alt="notification"></button>
             <div class="header__right-side__account" id="account"></div>
         </div>
         </header>
@@ -149,34 +149,34 @@
             <div class="main-page__section__body">
                 <div class="My-Expense">
                     <div class="My-Expense__rows">
-                        <div style="height: 93px;" class="My-Expense__rows__row">
+                        <div id="h1" class="My-Expense__rows__row">
                         </div>
                         <h4>Aug</h4>
                     </div>
                     <div class="My-Expense__rows">
-                        <div style="height: 142px;" class="My-Expense__rows__row">
+                        <div id="h2" class="My-Expense__rows__row">
                         </div>
                         <h4>Sep</h4>
                     </div>
                     <div class="My-Expense__rows">
-                        <div style="height: 96px;" class="My-Expense__rows__row">
+                        <div id="h1" class="My-Expense__rows__row">
                         </div>
                         <h4>Oct</h4>
                     </div>
                     <div class="My-Expense__rows">
-                        <div style="height: 49px;" class="My-Expense__rows__row">
+                        <div id="h3" class="My-Expense__rows__row">
                         </div>
                         <h4>Nov</h4>
                     </div>
                     <div class="My-Expense__rows">
                         <h6>$12,500</h6>
-                        <div style="height: 129px; background-color: var(--lightgreen);" class="My-Expense__rows__row">
+                        <div id="h2" style="background-color: var(--lightgreen);" class="My-Expense__rows__row">
                         </div>
                         <h4>Dec</h4>
 
                     </div>
                     <div class="My-Expense__rows">
-                        <div style="height: 88px;" class="My-Expense__rows__row">
+                        <div id="h1" class="My-Expense__rows__row">
                         </div>
                         <h4>Jan</h4>
                     </div>
@@ -200,27 +200,34 @@
                     </div>
                     <div class="Recent-Transactions">
                         <div class="Recent-Transactions__title">
-                            <h5 style="font-size: 1rem; margin-right: 125px;">Description</h5>
-                            <h5 style="font-size: 1rem; margin-right: 30px;">Transaction ID</h5>
-                            <h5 style="font-size: 1rem; margin-right: 60px;">Type</h5>
-                            <h5 style="font-size: 1rem; margin-right: 65px;">Card</h5>
-                            <h5 style="font-size: 1rem; margin-right: 140px;">Date</h5>
-                            <h5 style="font-size: 1rem; margin-right: 80px;">Amount</h5>
+                            <h5 style="font-size: 1rem;">Description</h5>
+                            <div class="all">
+                            <h5 style="font-size: 1rem;">Transaction ID</h5>
+                            <h5 style="font-size: 1rem;">Type</h5>
+                            <h5 style="font-size: 1rem;">Card</h5>
+                            <h5 style="font-size: 1rem;">Date</h5>
+                        </div>
+                        <div class="icon-name">
+                            <h5 style="font-size: 1rem;">Amount</h5>
                             <h5 style="font-size: 1rem;">Receipt</h5>
+                        </div>
 
                         </div>
 
 
                         <div class="Recent-Transactions__Recent-Transaction">
+                            <div class="icon-name">
                             <div><img src="./icons/Group 73.svg" alt="arrow"></div>
                             <div class="name-date">
-                            <h6 style=" margin-right: 15px;">Spotify Subscription</h6>
-                            <div class="ss"><h4 style=" margin-right: 45px;">28 Jan, 12.30 AM</h4></div></div>
+                            <h6 >Spotify Subscription</h6>
+                            <div class="ss"><h4 >28 Jan, 12.30 AM</h4></div>
+                        </div>
+                        </div>
                             <div class="all">
-                            <h6 style=" margin-right: 50px;">#12548796</h6>
-                            <h6 style=" margin-right: 30px;">Shopping</h6>
-                            <h6 style=" margin-right: 25px;">1234 ****</h6>
-                            <h6 style=" margin-right: 45px;">28 Jan, 12.30 AM</h6>
+                            <h6 >#12548796</h6>
+                            <h6 >Shopping</h6>
+                            <h6 >1234 ****</h6>
+                            <h6 >28 Jan, 12.30 AM</h6>
                         </div>
                             <h6 style="color: var(--red);">
                                 -$2,500
@@ -231,15 +238,18 @@
 
                         </div> 
                         <div class="Recent-Transactions__Recent-Transaction">
+                            <div class="icon-name">
                             <div><img src="./icons/Group 73.svg" alt="arrow"></div>
                             <div class="name-date">
-                            <h6 style=" margin-right: 70px;">Freepik Sales</h6>
-                            <div class="ss"><h4 style=" margin-right: 45px;">25 Jan, 10.40 PM</h4></div></div>
+                            <h6 >Freepik Sales</h6>
+                            <div class="ss"><h4 >25 Jan, 10.40 PM</h4></div>
+                        </div>
+                    </div>
                             <div class="all">
-                            <h6 style=" margin-right: 50px;">#12548796</h6>
-                            <h6 style=" margin-right: 40px;">Transfer</h6>
-                            <h6 style=" margin-right: 25px;">1234 ****</h6>
-                            <h6 style=" margin-right: 45px;">25 Jan, 10.40 PM</h6>
+                            <h6 >#12548796</h6>
+                            <h6 >Transfer</h6>
+                            <h6 >1234 ****</h6>
+                            <h6 >25 Jan, 10.40 PM</h6>
                             </div>
                             <h6 style="color: var(--lightgreen);">
                                 +$750
@@ -250,34 +260,38 @@
 
                         </div>   
                         <div class="Recent-Transactions__Recent-Transaction">
+                            <div class="icon-name">
                             <div><img src="./icons/Group 73.svg" alt="arrow"></div>
                             <div class="name-date">
-                            <h6 style=" margin-right: 60px;">Mobile Service</h6>
-                            <div class="ss"><h4 style=" margin-right: 45px;">20 Jan, 10.40 PM</h4></div></div>
+                            <h6 >Mobile Service</h6>
+                            <div class="ss"><h4>20 Jan, 10.40 PM</h4></div>
+                        </div></div>
                             <div class="all">
-                            <h6 style=" margin-right: 50px;">#12548796</h6>
-                            <h6 style=" margin-right: 30px;">Shopping</h6>
-                            <h6 style=" margin-right: 25px;">1234 ****</h6>
-                            <h6 style=" margin-right: 45px;">20 Jan, 10.40 PM</h6>
+                            <h6 >#12548796</h6>
+                            <h6 >Shopping</h6>
+                            <h6 >1234 ****</h6>
+                            <h6>20 Jan, 10.40 PM</h6>
                         </div>
                             <h6 style="color: var(--red); ">
                                 -$150
                             </h6>
-                            <div class="Recent-Transactions__Recent-Transaction__download">
-                                <h6>Download</h6>
+                            <div id="select1" class="Recent-Transactions__Recent-Transaction__download">
+                                <h6 id="select">Download</h6>
                             </div>
 
                         </div>   
                         <div class="Recent-Transactions__Recent-Transaction">
+                            <div class="icon-name">
                             <div><img src="./icons/Group 73.svg" alt="arrow"></div>
                             <div class="name-date">
                             <h6 style=" margin-right: 120px;">Wilson</h6>
-                            <div class="ss"><h4 style=" margin-right: 45px;">15 Jan, 03.29 PM</h4></div></div>
+                            <div class="ss"><h4 >15 Jan, 03.29 PM</h4></div>
+                        </div></div>
                             <div class="all">
-                            <h6 style=" margin-right: 50px;">#12548796</h6>
-                            <h6 style=" margin-right: 40px;">Transfer</h6>
-                            <h6 style=" margin-right: 25px;">1234 ****</h6>
-                            <h6 style=" margin-right: 45px;">15 Jan, 03.29 PM</h6>
+                            <h6 >#12548796</h6>
+                            <h6 >Transfer</h6>
+                            <h6 >1234 ****</h6>
+                            <h6 >15 Jan, 03.29 PM</h6>
                             </div>
                             <h6 style="color: var(--red);">
                                 -$1050
@@ -288,16 +302,19 @@
 
                         </div>   
                         <div class="Recent-Transactions__Recent-Transaction">
+                            <div class="icon-name">
                             <div><img src="./icons/Group 73.svg" alt="arrow"></div>
                             <div class="name-date">
                             <h6 style=" margin-right: 125px;">Emilly</h6>
-                            <div class="ss"><h4 style=" margin-right: 45px;">14 Jan, 10.40 PM</h4></div></div>
+                            <div class="ss"><h4 >14 Jan, 10.40 PM</h4></div>
+                        </div></div>
                             <div class="all">
-                            <h6 style=" margin-right: 50px;">#12548796</h6>
-                            <h6 style=" margin-right: 40px;">Transfer</h6>
-                            <h6 style=" margin-right: 25px;">1234 ****</h6>
-                            <h6 style=" margin-right: 50px;">14 Jan, 10.40 PM</h6>
+                            <h6 >#12548796</h6>
+                            <h6 >Transfer</h6>
+                            <h6 >1234 ****</h6>
+                            <h6 >14 Jan, 10.40 PM</h6>
                         </div>
+                        
                             <h6 style="color: var(--red); ">
                                 +$840
                             </h6>

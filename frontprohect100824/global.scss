@@ -3,18 +3,26 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
+    button{
+        border: 0;
+    }
 }
 html{
     font-size: 16px;
     
-    @media (max-width : 1442px) {
+    @media (max-width : 1440px) {
         font-size: 12px;
         
  }
+ @media (max-width : 410px) {
+    font-size: 14px;
+        width: 375px;
+}
 }
 a{
     text-decoration: none;
 }
+
 :root{
     // css variables
     --primary: rgba(45, 96, 255, 1);
@@ -77,6 +85,7 @@ h5{
     font-weight: 500;
     font-family: "Inter", sans-serif;
     color: var(--greytext);
+
 }
 h6{
     font-family: "Inter", sans-serif;
@@ -93,13 +102,20 @@ h6{
 .continer{
     display: flex;
     background-color: var(--background) ;
+    @media (max-width : 410px) {
+        width: 375px;
+ }
+
+
     main{
         background-color: var(--background) ;
         @media (min-width : 1440px) {
         width: 100%;
         height: 100%;
-        
         }
+        @media (max-width : 410px) {
+            width: 375px;
+     }
     }
     aside{
        min-width: 250px;
@@ -173,6 +189,7 @@ aside{
         justify-content: space-between;
         width: 100%;
         align-items: center;
+        padding: 10px;
         #menu{
             display: none;
             @media (max-width : 410px) {

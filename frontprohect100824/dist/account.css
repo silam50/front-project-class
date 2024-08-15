@@ -5,6 +5,12 @@
   padding: 30px;
   max-width: 1440px;
 }
+@media (max-width: 410px) {
+  .main-page {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+}
 .main-page__section {
   display: flex;
   flex-direction: column;
@@ -18,7 +24,7 @@
 }
 @media (max-width: 400px) {
   .main-page__section__title {
-    width: 350px;
+    width: 325px;
   }
 }
 .main-page__section__body .two-item {
@@ -34,6 +40,22 @@
   padding: 25px;
   gap: 20px;
 }
+@media (max-width: 1440px) {
+  .main-page__section__body .two-item .item {
+    width: 167px;
+    height: 90px;
+    padding: 18px;
+    gap: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .main-page__section__body .two-item .item {
+    width: 155px;
+    height: 85px;
+    padding: 5px;
+    padding-top: 15px;
+  }
+}
 .main-page__section__body .two-item .item__icon {
   height: 70px;
   width: 70px;
@@ -42,11 +64,30 @@
   padding: 20px;
   text-align: center;
 }
+@media (max-width: 1440px) {
+  .main-page__section__body .two-item .item__icon {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .main-page__section__body .two-item .item__icon {
+    width: 45px;
+    height: 45px;
+    padding: 6px;
+  }
+}
 .main-page__section__body .two-item .item__name-amount {
   display: flex;
   flex-direction: column;
   gap: 10px;
   text-align: center;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .two-item .item__name-amount {
+    gap: 5px;
+  }
 }
 .main-page__section__body .two-item .item__name-amount h2 {
   font-size: 1.5625rem;
@@ -58,6 +99,29 @@
   font-weight: 400;
   line-height: 19.36px;
 }
+.main-page__section__body #end {
+  width: 350px;
+  height: 364px;
+  padding: 30px;
+  padding-top: 40px;
+  gap: 20px;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body #end {
+    padding-top: 30px;
+    gap: 10px;
+    width: 231px;
+    height: 270px;
+  }
+}
+@media (max-width: 400px) {
+  .main-page__section__body #end {
+    padding-top: 30px;
+    gap: 10px;
+    width: 325px;
+    height: 265px;
+  }
+}
 .main-page__section__body .transactions {
   display: flex;
   flex-direction: column;
@@ -67,6 +131,21 @@
   background-color: white;
   border-radius: 25px;
   padding: 25px;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .transactions {
+    width: 487px;
+    height: 170px;
+    padding: 15px;
+    gap: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .main-page__section__body .transactions {
+    width: 325px;
+    height: 199px;
+    padding: 30px;
+  }
 }
 .main-page__section__body .transactions .transaction {
   text-align: center;
@@ -83,6 +162,14 @@
   padding: 15px;
   text-align: center;
 }
+@media (max-width: 1440px) {
+  .main-page__section__body .transactions .transaction__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    padding: 6px;
+  }
+}
 .main-page__section__body .transactions .transaction__name-date {
   display: flex;
   flex-direction: column;
@@ -90,10 +177,26 @@
   gap: 5px;
   width: 156px;
 }
+@media (max-width: 1440px) {
+  .main-page__section__body .transactions .transaction__name-date {
+    width: 135px;
+  }
+}
 .main-page__section__body .transactions .transaction__data {
   display: flex;
   justify-content: space-between;
   gap: 50px;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .transactions .transaction__data {
+    width: 200px;
+    gap: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .main-page__section__body .transactions .transaction__data {
+    display: none;
+  }
 }
 .main-page__section__body .transactions .transaction__price {
   font-family: "Inter", sans-serif;
@@ -112,13 +215,33 @@
   height: 235px;
   border-radius: 30px;
   padding-top: 10px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .my-cards .card {
+    width: 231px;
+    height: 170px;
+  }
+}
+@media (max-width: 410px) {
+  .main-page__section__body .my-cards .card {
+    width: 325px;
+    height: 197px;
+  }
 }
 .main-page__section__body .my-cards .card__header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
   padding-right: 25px;
-  padding-bottom: 0;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .my-cards .card__header {
+    padding: 15px;
+    padding-bottom: 0;
+  }
 }
 .main-page__section__body .my-cards .card__header__left {
   display: flex;
@@ -127,13 +250,24 @@
 .main-page__section__body .my-cards .card__mid {
   display: flex;
   padding: 20px;
-  padding-bottom: 37px;
   gap: 50px;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .my-cards .card__mid {
+    padding: 10px;
+    padding-bottom: 5px;
+  }
 }
 .main-page__section__body .my-cards .card__footer {
   padding: 20px;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .my-cards .card__footer {
+    padding: 15px;
+    padding-bottom: 5px;
+  }
 }
 .main-page__section__body .my-cards .select-card {
   background: linear-gradient(107.38deg, #2D60FF 2.61%, #539BFF 101.2%);
@@ -158,14 +292,36 @@
   padding: 30px;
   position: relative;
 }
+@media (max-width: 1440px) {
+  .main-page__section__body .debit {
+    width: 487px;
+    height: 270px;
+  }
+}
+@media (max-width: 400px) {
+  .main-page__section__body .debit {
+    width: 325px;
+    height: 245px;
+  }
+}
 .main-page__section__body .debit__header {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 400px) {
+  .main-page__section__body .debit__header {
+    justify-content: end;
+  }
 }
 .main-page__section__body .debit__header__left {
   display: flex;
   gap: 2px;
   text-align: end;
+}
+@media (max-width: 400px) {
+  .main-page__section__body .debit__header__left {
+    display: none;
+  }
 }
 .main-page__section__body .debit__header__right {
   display: flex;
@@ -184,6 +340,17 @@
   top: 90px;
   left: 30px;
 }
+@media (max-width: 1440px) {
+  .main-page__section__body .debit .graf {
+    gap: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .main-page__section__body .debit .graf {
+    gap: 15px;
+    top: 60px;
+  }
+}
 .main-page__section__body .debit .graf__month {
   display: flex;
   flex-direction: column;
@@ -192,19 +359,102 @@
   width: 70px;
   justify-content: end;
 }
+@media (max-width: 1440px) {
+  .main-page__section__body .debit .graf__month {
+    width: 48px;
+    gap: 8px;
+  }
+}
+@media (max-width: 400px) {
+  .main-page__section__body .debit .graf__month {
+    width: 25px;
+  }
+}
 .main-page__section__body .debit .graf__month__rows {
   display: flex;
   flex-direction: row;
   gap: 10px;
   align-items: end;
 }
+.main-page__section__body .debit .graf__month__rows #one {
+  height: 220px;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .debit .graf__month__rows #one {
+    height: 150px;
+  }
+}
+.main-page__section__body .debit .graf__month__rows #two {
+  height: 180px;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .debit .graf__month__rows #two {
+    height: 130px;
+  }
+}
+.main-page__section__body .debit .graf__month__rows #three {
+  height: 150px;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .debit .graf__month__rows #three {
+    height: 110px;
+  }
+}
+.main-page__section__body .debit .graf__month__rows #four {
+  height: 130px;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .debit .graf__month__rows #four {
+    height: 90px;
+  }
+}
+.main-page__section__body .debit .graf__month__rows #five {
+  height: 110px;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .debit .graf__month__rows #five {
+    height: 70px;
+  }
+}
+.main-page__section__body .debit .graf__month__rows #six {
+  height: 90px;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .debit .graf__month__rows #six {
+    height: 50px;
+  }
+}
 .main-page__section__body .debit .graf__month__rows .blue {
   background-color: var(--secondery);
   width: 30px;
   border-radius: 10px;
 }
+@media (max-width: 1440px) {
+  .main-page__section__body .debit .graf__month__rows .blue {
+    width: 20px;
+    border-radius: 7px;
+  }
+}
+@media (max-width: 400px) {
+  .main-page__section__body .debit .graf__month__rows .blue {
+    width: 10px;
+    border-radius: 4px;
+  }
+}
 .main-page__section__body .debit .graf__month__rows .green {
   background-color: var(--orenge2);
   width: 30px;
   border-radius: 10px;
+}
+@media (max-width: 1440px) {
+  .main-page__section__body .debit .graf__month__rows .green {
+    width: 20px;
+    border-radius: 7px;
+  }
+}
+@media (max-width: 400px) {
+  .main-page__section__body .debit .graf__month__rows .green {
+    width: 10px;
+    border-radius: 4px;
+  }
 }

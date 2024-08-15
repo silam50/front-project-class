@@ -8,6 +8,13 @@
 @media (max-width: 1440px) {
   .main-page {
     gap: 15px;
+    padding: 15px;
+  }
+}
+@media (max-width: 410px) {
+  .main-page {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
   }
 }
 .main-page__section {
@@ -45,7 +52,7 @@
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .my-cards .card {
     width: 231px;
     height: 170px;
@@ -62,7 +69,7 @@
   padding: 20px;
   padding-right: 25px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .my-cards .card__header {
     padding: 15px;
     padding-bottom: 0;
@@ -77,7 +84,7 @@
   padding: 20px;
   gap: 50px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .my-cards .card__mid {
     padding: 10px;
     padding-bottom: 5px;
@@ -88,7 +95,7 @@
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .my-cards .card__footer {
     padding: 15px;
     padding-bottom: 5px;
@@ -119,7 +126,7 @@
   flex-direction: column;
   gap: 15px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Recent_Transection {
     width: 231px;
     height: 170px;
@@ -141,7 +148,7 @@
   justify-content: space-between;
   gap: 20px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Recent_Transection__transection {
     gap: 5px;
   }
@@ -155,7 +162,7 @@
   padding: 12px;
   flex: 1;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Recent_Transection__transection__icon {
     width: 40px;
     height: 40px;
@@ -169,7 +176,7 @@
   padding-top: 5px;
   flex: 5;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Recent_Transection__transection__title {
     padding-top: 0px;
   }
@@ -185,7 +192,7 @@
   line-height: 19.36px;
   text-align: right;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Recent_Transection__transection__price {
     padding-top: 10px;
   }
@@ -198,7 +205,7 @@
   padding: 30px;
   position: relative;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Weekly_Activity {
     width: 487px;
     height: 261px;
@@ -247,7 +254,7 @@
   gap: 20px;
   align-items: end;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Weekly_Activity .graf-bg__bottom__nums {
     gap: 10px;
   }
@@ -263,7 +270,7 @@
   border-top: 1px solid var(--line);
   height: 38px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Weekly_Activity .graf-bg__bottom__lines .line {
     height: 30px;
   }
@@ -277,7 +284,7 @@
   left: 110px;
   align-items: end;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Weekly_Activity .graf {
     top: 98px;
     left: 90px;
@@ -299,7 +306,7 @@
   width: 40px;
   justify-content: end;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Weekly_Activity .graf__month {
     gap: 8px;
   }
@@ -324,7 +331,7 @@
 .main-page__section__body .Weekly_Activity .graf__month__rows #one {
   height: 175px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Weekly_Activity .graf__month__rows #one {
     height: 130px;
   }
@@ -332,7 +339,7 @@
 .main-page__section__body .Weekly_Activity .graf__month__rows #two {
   height: 150px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Weekly_Activity .graf__month__rows #two {
     height: 110px;
   }
@@ -340,7 +347,7 @@
 .main-page__section__body .Weekly_Activity .graf__month__rows #three {
   height: 130px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Weekly_Activity .graf__month__rows #three {
     height: 90px;
   }
@@ -348,7 +355,7 @@
 .main-page__section__body .Weekly_Activity .graf__month__rows #four {
   height: 90px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Weekly_Activity .graf__month__rows #four {
     height: 70px;
   }
@@ -356,7 +363,7 @@
 .main-page__section__body .Weekly_Activity .graf__month__rows #five {
   height: 60px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Weekly_Activity .graf__month__rows #five {
     height: 50px;
   }
@@ -364,7 +371,7 @@
 .main-page__section__body .Weekly_Activity .graf__month__rows #six {
   height: 50px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Weekly_Activity .graf__month__rows #six {
     height: 30px;
   }
@@ -374,7 +381,7 @@
   width: 15px;
   border-radius: 30px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Weekly_Activity .graf__month__rows .blue {
     width: 10px;
   }
@@ -389,7 +396,7 @@
   width: 15px;
   border-radius: 30px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Weekly_Activity .graf__month__rows .green {
     width: 10px;
   }
@@ -406,7 +413,7 @@
   border-radius: 30px;
   position: relative;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Expense-Statistics {
     width: 231px;
     height: 261px;
@@ -423,7 +430,7 @@
   bottom: 70px;
   left: 15px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Expense-Statistics__circle {
     bottom: 65px;
     left: 0px;
@@ -439,7 +446,7 @@
   top: 130px;
   left: 98px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Expense-Statistics__circle #name1 {
     top: 118px;
     left: 67px;
@@ -449,17 +456,17 @@
   top: 185px;
   left: 200px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Expense-Statistics__circle #name2 {
     top: 150px;
-    left: 145px;
+    left: 138px;
   }
 }
 .main-page__section__body .Expense-Statistics__circle #name3 {
   top: 240px;
   left: 40px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Expense-Statistics__circle #name3 {
     top: 200px;
     left: 35px;
@@ -469,7 +476,7 @@
   top: 280px;
   left: 175px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Expense-Statistics__circle #name4 {
     top: 220px;
     left: 125px;
@@ -500,7 +507,7 @@
   z-index: 3;
   rotate: 290deg;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Expense-Statistics__circle__orange-piece {
     height: 160px;
     width: 160px;
@@ -518,7 +525,7 @@
   background-color: white;
   clip-path: polygon(30% 0%, 100% 0, 100% 30%, 100% 70%, 100% 100%, 50% 100%, 50% 54%, 0 0);
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Expense-Statistics__circle__white-bg {
     height: 160px;
     width: 160px;
@@ -533,7 +540,7 @@
   background-color: var(--darkpink);
   border-radius: 50%;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Expense-Statistics__circle__pink-piece {
     height: 160px;
     width: 160px;
@@ -550,7 +557,7 @@
   clip-path: polygon(100% 50%, 100% 100%, 50% 100%, 50% 50%);
   z-index: 2;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Expense-Statistics__circle__blue-piece {
     height: 160px;
     width: 160px;
@@ -570,7 +577,7 @@
   border-radius: 50%;
   clip-path: polygon(100% 43%, 100% 100%, 45% 100%, 40% 43%);
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Expense-Statistics__circle__darkblue-piece {
     height: 160px;
     width: 160px;
@@ -587,7 +594,7 @@
   flex-direction: column;
   padding: 30px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Quick-Transfer {
     height: 220px;
     width: 295px;
@@ -607,7 +614,7 @@
   align-items: start;
   gap: 25px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Quick-Transfer__top {
     gap: 10px;
   }
@@ -621,7 +628,7 @@
 .main-page__section__body .Quick-Transfer__top__account #img1 {
   background-image: url(../images/MaskGroup.jpg);
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Quick-Transfer__top__account #img1 {
     background-image: url(../images/image1.jpg);
   }
@@ -629,7 +636,7 @@
 .main-page__section__body .Quick-Transfer__top__account #img2 {
   background-image: url(../images/MaskGroupa.jpg);
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Quick-Transfer__top__account #img2 {
     background-image: url(../images/image2.jpg);
   }
@@ -637,7 +644,7 @@
 .main-page__section__body .Quick-Transfer__top__account #img3 {
   background-image: url(../images/MaskGroupb.jpg);
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Quick-Transfer__top__account #img3 {
     background-image: url(../images/image3.jpg);
   }
@@ -648,7 +655,7 @@
   border-radius: 50%;
   background-image: cover;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Quick-Transfer__top__account .icon {
     height: 50px;
     width: 50px;
@@ -663,7 +670,7 @@
   border: 0;
   margin: auto;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Quick-Transfer__top button {
     height: 40px;
     width: 40px;
@@ -675,7 +682,7 @@
   align-items: center;
   gap: 20px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Quick-Transfer__bottom {
     gap: 10px;
   }
@@ -690,7 +697,7 @@
   padding-left: 30px;
   justify-content: space-between;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Quick-Transfer__bottom__ammount {
     width: 168px;
     padding-left: 10px;
@@ -708,7 +715,7 @@
   text-align: center;
   gap: 10px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Quick-Transfer__bottom__ammount .send {
     width: 100px;
     height: 40px;
@@ -721,7 +728,7 @@
   width: 635px;
   border-radius: 30px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   .main-page__section__body .Balance-History {
     height: 220px;
     width: 423px;

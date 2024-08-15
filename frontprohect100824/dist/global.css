@@ -4,13 +4,22 @@
   box-sizing: border-box;
   font-size: 16px;
 }
+* button {
+  border: 0;
+}
 
 html {
   font-size: 16px;
 }
-@media (max-width: 1442px) {
+@media (max-width: 1440px) {
   html {
     font-size: 12px;
+  }
+}
+@media (max-width: 410px) {
+  html {
+    font-size: 14px;
+    width: 375px;
   }
 }
 
@@ -97,6 +106,11 @@ h6 {
   display: flex;
   background-color: var(--background);
 }
+@media (max-width: 410px) {
+  .continer {
+    width: 375px;
+  }
+}
 .continer main {
   background-color: var(--background);
 }
@@ -104,6 +118,11 @@ h6 {
   .continer main {
     width: 100%;
     height: 100%;
+  }
+}
+@media (max-width: 410px) {
+  .continer main {
+    width: 375px;
   }
 }
 .continer aside {
@@ -176,6 +195,7 @@ aside .select-item {
   justify-content: space-between;
   width: 100%;
   align-items: center;
+  padding: 10px;
 }
 .header__left-side #menu {
   display: none;
